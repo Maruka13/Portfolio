@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
- a {
+a {
     color: #4834a5;
     text-decoration: none;
     transition: 0.3s;
