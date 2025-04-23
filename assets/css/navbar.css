@@ -9,21 +9,23 @@ a {
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-family: 'IM FELL English SC', sans-serif;
+                                                
   }
   
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     height: 8vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 20px;
   }
  
   .nav-list {
