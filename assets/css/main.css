@@ -64,6 +64,12 @@ span {
 
 .social-icon {
     margin-top: 2.5rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
 }
 
 .social-icon a {
@@ -79,6 +85,7 @@ span {
     color: #4834a5;
     margin: 0 1rem;
     transition: 0.3s ease;
+    margin: 0 2rem;
 }
 
 .social-icon a:hover {
@@ -87,7 +94,33 @@ span {
     box-shadow: 0 0 15px #4834a5;
 }
 
-.btn {
+.social-link {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4834a5;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover .tooltip {
+    opacity: 1;
+}
+
+
+/* .btn {
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 3rem;
@@ -103,12 +136,15 @@ span {
 .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #4f58d6;
-}
+} */
 
 @keyframes blinkCursor {
-    0%, 100% {
+
+    0%,
+    100% {
         border-color: transparent;
     }
+
     50% {
         border-color: #7126b3;
     }
