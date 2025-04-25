@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,66 +22,47 @@
 
     <div id="particles-js"></div>
 
-    <header>
+    <header data-include="assets/components/navbar.html"></header>
 
-        <nav>
-            <a class="logo" href="/">Emanuelle Gomes</a>
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Emanuelle</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I am a Fullstack Developer passionate about creating clean, functional, and user-focused solutions.
+                I specialize in Python, Java, C#, Angular, SQL Server, and MongoDB, and I'm currently deepening my
+                skills in cloud technologies like AWS and Azure.
+                With experience in internships and freelance projects, I'm now looking for my first official junior
+                developer role and aiming for international opportunities. Curious? Take a look at what I've been
+                building.
+            </p>
 
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/manugomesdev/" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="tooltip">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Maruka13" class="social-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="tooltip">GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/manu_gomes_13/" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="tooltip">Instagram</span>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa-regular fa-file"></i>
+                    <span class="tooltip">CV</span>
+                </a>
             </div>
 
-            <ul class="nav-list">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#education">Formação</a></li>
-                <li><a href="assets/pages/cards.html">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
 
-        </nav>
+            <!-- <a href="#" class="btn">Hire Me</a>   -->
+        </div>
 
-        <section id="home" class="home">
-            <div class="home-content">
-                <h1>Hi, It's <span>Emanuelle</span></h1>
-                <h3 class="typing-text">I'm a <span></span></h3>
-                <p>I am a Fullstack Developer passionate about creating clean, functional, and user-focused solutions.
-                    I specialize in Python, Java, C#, Angular, SQL Server, and MongoDB, and I'm currently deepening my
-                    skills in cloud technologies like AWS and Azure.
-                    With experience in internships and freelance projects, I'm now looking for my first official junior
-                    developer role and aiming for international opportunities. Curious? Take a look at what I've been
-                    building.
-                </p>
-
-                <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/manugomesdev/" class="social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span class="tooltip">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Maruka13" class="social-link">
-                        <i class="fa-brands fa-github"></i>
-                        <span class="tooltip">GitHub</span>
-                    </a>
-                    <a href="https://www.instagram.com/manu_gomes_13/" class="social-link">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span class="tooltip">Instagram</span>
-                    </a>
-                    <a href="" class="social-link">
-                        <i class="fa-regular fa-file"></i>
-                        <span class="tooltip">CV</span>
-                    </a>
-                </div>
-
-
-                <!-- <a href="#" class="btn">Hire Me</a>   -->
-            </div>
-
-            <div class="home-img">
-                <img src="assets/img/Emanuelle.png" alt="Maruka">
-            </div>
-        </section>
+        <div class="home-img">
+            <img src="assets/img/Emanuelle.png" alt="Maruka">
+        </div>
+    </section>
 
 
     </header>
@@ -93,6 +74,7 @@
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/mobile-navbar.js"></script>
     <script src="assets/js/typing-effect.js"></script>
+    <script src="assets/js/include.js"></script>
 
 </body>
 
