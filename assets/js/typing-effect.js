@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const words = [
-      "Software Engineer....",
-      "Mechatronics Technician....",
-      "Web Developer....",
-      "CNC Programmer....",
-      "Gamer...."
+      " Software Engineer. ",
+      " Mechatronics Technician. ",
+      " Web Developer. ",
+      " CNC Programmer. ",
+      " Elden Lord. "
     ];
   
     const typedText = document.querySelector(".typing-text span");

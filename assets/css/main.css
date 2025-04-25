@@ -7,14 +7,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
+    gap: 1rem;
+    padding: 4rem 6rem;
 }
 
 .home-content {
     max-width: 800px;
-    padding-right: 2rem;
-    padding-left: 10rem;
+    padding-right: 1rem;
+    padding-left: 7rem;
 }
 
 .home-content h1 {
@@ -22,6 +22,8 @@
     white-space: nowrap;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    font-size: 70px;
+    color:   rgb(106, 42, 165);
 }
 
 .home-content h3.typing-text {
@@ -33,16 +35,21 @@
     display: inline-block;
     min-height: 3rem;
     animation: blinkCursor 0.8s steps(1) infinite;
+    font-size: 60px;
+    color:   rgb(106, 42, 165);
 }
 
 .home-content p {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
     margin-top: 1.5rem;
     line-height: 1.6;
+    color: #19095f;
+    text-align: center;
 }
 
 span {
-    color: rgb(95, 18, 168);
+    color: #6f57da;
+    
 }
 
 .home-img {
@@ -52,8 +59,6 @@ span {
 
 .home-img img {
     width: clamp(300px, 40vw, 450px);
-    border-radius: 50%;
-    cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
