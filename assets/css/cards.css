@@ -1,41 +1,104 @@
-.projetos {
-    padding: 5rem 9%;
-    min-height: 100vh;
-  }
+.sectionproject {
+  min-height: 100vh;
+}
+
+.projects {
+  max-width: 140vh;
+  margin: 0 auto;
+  max-height: 140vh;
+}
+
+.projects-content {
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   
-  .projetos h1 {
-    font-size: 3rem;
-    color: #4834a5;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .projetos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .card {
-    background: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    text-align: center;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card a {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #4834a5;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  border: 1px solid rgb(108, 12, 235);
+  align-items: center;
+  text-align: center; 
+  padding: 10px;
+}
+
+.card-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-title {
+  width: 100%;
+  background-color: #3f096b;
+  padding: 10px;
+}
+
+.card-title a {
+  text-decoration: none;
+}
+
+.card-title a > h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tecnologias strong {
+  color: #7824e6;
+}
+
+.card-description {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.links .git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%; 
+  margin: 0 auto;  
+  background-color: #f1d7ff;
+  color: #4b1c71;
+  border: 1px solid #2c064b;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.links .git:hover {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
