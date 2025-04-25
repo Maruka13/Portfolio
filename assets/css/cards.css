@@ -5,11 +5,7 @@
 }
 
 h1 {
-  color: #6f57da;
-}
-
-h3 {
- color: #392399;
+  color: #33227c;
 }
 
 .projects-content {
@@ -102,6 +98,7 @@ h3 {
 .links.circle:hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px #4834a5;
 }
 
 /* Tooltip do botão circular */
@@ -111,7 +108,7 @@ h3 {
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #da92e9;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -140,7 +137,43 @@ h3 {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px #4834a5;
 }
+
+.tech-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px; 
+  font-size: 3rem;
+  color: #5239c0;
+}
+
+.tech-icons i {
+  position: relative;
+  cursor: pointer; 
+}
+
+.tech-icons i .tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #da92e9;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-icons i:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 @media (max-width: 500px) {
