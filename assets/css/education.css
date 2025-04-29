@@ -80,12 +80,12 @@
 }
 
 .education .content {
-    background:  rgb(164, 142, 224);
+    background: rgb(164, 142, 224);
     position: relative;
     border-radius: 6px;
 }
 
-.education .content .tag{
+.education .content .tag {
     font-size: 1.5rem;
     padding-top: 1.5rem;
     padding-left: 1.5rem;
@@ -96,13 +96,56 @@
     padding-bottom: 1rem;
 }
 
-.education .content .decs h3 {
-    font-size: 1.5rem;
+.education .content .tag h2 {
+    font-size: 2rem;
     font-weight: 600;
+    color: black;
 }
 
 .education .content .decs p {
     font-size: 1.3rem;
     font-weight: 500;
-    
+    color: black;
+
+}
+
+@media screen and (max-width:600px) {
+    .education .timeline {
+        margin-top: 2rem;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .container {
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+
+    .education .container::after {
+        font-size: 2.2rem;
+    }
+
+    .education .container::before {
+        left: 61px;
+        border: medium solid rgb(164, 142, 224);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent blueviolet transparent transparent;
+    }
+
+    .education .left::after {
+        left: 15px;
+    }
+
+    .education .right::after {
+        left: 15px;
+    }
+
+    .education .right {
+        left: 0%;
+    }
+
+
 }
