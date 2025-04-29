@@ -32,6 +32,12 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(57, 3, 94, 0.3); 
 }
 
 .card-img {
