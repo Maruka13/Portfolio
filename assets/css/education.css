@@ -14,5 +14,68 @@
     left: 50%;
     margin-left: -3px;
     z-index: -2px;
-
 }
+
+.education .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.education .container::after {
+    content: '\f501';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: -17px;
+    background-color: rgb(252, 252, 252);
+    border: 4px solid blueviolet;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 1.89rem;
+    text-align: center;
+    font-weight: 600;
+    color: blue;
+}
+
+.education .left {
+    left: 0;
+}
+
+.education .right {
+    left: 50%;
+}
+
+.education .left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(83, 33, 221);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent blueviolet;
+}
+
+.education .right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(83, 33, 221);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent blueviolet transparent transparent;
+}
+
+.education .right::after {
+    left: -16px;
+}
+
