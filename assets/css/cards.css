@@ -108,7 +108,7 @@ h1 {
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #da92e9;
+  background-color: #92c6e9;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -160,7 +160,7 @@ h1 {
   top: 50px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color: #da92e9;
+  background-color: #92c6e9;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -174,7 +174,6 @@ h1 {
   visibility: visible;
   opacity: 1;
 }
-
 
 
 @media (max-width: 500px) {
