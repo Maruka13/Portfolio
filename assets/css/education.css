@@ -79,3 +79,30 @@
     left: -16px;
 }
 
+.education .content {
+    background:  rgb(164, 142, 224);
+    position: relative;
+    border-radius: 6px;
+}
+
+.education .content .tag{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.education .content .decs {
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.education .content .decs h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.education .content .decs p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+}
