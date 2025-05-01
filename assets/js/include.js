@@ -3,14 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   includes.forEach(el => {
     const file = el.getAttribute("data-include");
-
     fetch(file)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Erro ao carregar ${file}: ${response.statusText}`);
-        }
-        return response.text();
-      })
+      .then(response => response.text())
       .then(data => {
         el.innerHTML = data;
 
@@ -20,10 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
           ".nav-list li"
         );
         mobileNavbar.init();
-      })
-      .catch(error => {
-        console.error("Erro ao incluir HTML:", error);
-        el.innerHTML = `<p style="color:red;">Erro ao carregar componente: ${file}</p>`;
+
+        const links = el.querySelectorAll("nav a[href]");
+        links.forEach(link => {
+          const href = link.getAttribute("href");
+          if (
+            href &&
+            !href.startsWith("http") &&
+            !href.startsWith("#") &&
+            !href.startsWith("/")
+          ) {
+            const base = window.location.pathname.includes("/pages/")
+              ? "../"
+              : "./";
+            link.setAttribute("href", base + href);
+          }
+        });
       });
   });
 });
