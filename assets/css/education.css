@@ -130,6 +130,11 @@
 
 }
 
+#certifications .heading {
+    color: #4022c5;
+}
+
+
 @media screen and (max-width:600px) {
 
     .education .heading {
