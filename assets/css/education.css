@@ -108,7 +108,7 @@
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-left: 1.5rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .education .content .decs {
@@ -133,9 +133,9 @@
 .selector {
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .selector button {
+}
+
+.selector button {
     background-color: #33227c;
     color: #fff;
     border: none;
@@ -145,17 +145,17 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .selector button:hover {
+}
+
+.selector button:hover {
     background-color: #4022c5;
-  }
-  
-  .certification-display {
+}
+
+.certification-display {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     min-height: 150px;
-  }
+}
 
 @media screen and (max-width:600px) {
 
@@ -164,7 +164,7 @@
         font-size: 2.5rem;
         margin-bottom: 3rem;
     }
-    
+
     .education .timeline {
         margin-top: 2rem;
     }
@@ -192,11 +192,21 @@
 
     .education .left::after,
     .education .right::after {
-    left: 15px;
-  }
+        left: 15px;
+    }
 
     .education .right {
         left: 0%;
+    }
+
+    .selector {
+        margin-bottom: 1.5rem;
+    }
+
+    .selector button {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
     }
 
 
