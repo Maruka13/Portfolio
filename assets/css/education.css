@@ -130,6 +130,7 @@
 
 }
 
+/*
 .certification-grid {
     display: flex;
     justify-content: center;
@@ -154,7 +155,35 @@
 .certification-grid .content:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(57, 3, 94, 0.3);
-}
+} */
+
+.selector {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .selector button {
+    background-color: #33227c;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .selector button:hover {
+    background-color: #4022c5;
+  }
+  
+  .certification-display {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 150px;
+  }
+  
 
 
 
