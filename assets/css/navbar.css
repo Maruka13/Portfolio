@@ -13,7 +13,6 @@ a:hover {
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 4px;
-
 }
 
 nav {
@@ -27,6 +26,17 @@ nav {
   height: 8vh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 25px;
+}
+
+nav .logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .logo img {
+  height: 30px;
 }
 
 .nav-list {
