@@ -187,8 +187,7 @@ h4 {
     transform: translateX(5px);
 }
 
-/* Responsividade */
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     .cards-sidebyside {
         flex-wrap: wrap;
         align-items: flex-start;

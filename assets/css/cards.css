@@ -2,6 +2,7 @@
   max-width: 140vh;
   max-height: 140vh;
   margin: 0 auto;
+  gap: 30px;
 }
 
 h1 {
