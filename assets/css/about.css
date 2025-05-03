@@ -18,6 +18,20 @@ span {
     color: #5b39ac;
 }
 
+h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #6a4de9;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #4213ad;
+    text-align: center;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -45,11 +59,22 @@ span {
     font-weight: 600;
 }
 
-.card {
+.cards-sidebyside {
     display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.perfil {
+    flex: 1 1 350px;
+    max-width: 400px;
+}
+
+.card {
+    width: 100%;
     text-align: left;
     border-radius: 10px;
     padding: 20px;
@@ -78,4 +103,56 @@ span {
     font-weight: bold;
     display: inline-block;
     width: 130px;
+}
+
+.services {
+    flex: 1 1 300px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.services-card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #4213ad;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(57, 3, 94, 0.3);
+}
+
+@media (max-width: 768px) {
+    .cards-sidebyside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-card {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
 }
