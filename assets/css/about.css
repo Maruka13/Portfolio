@@ -1,18 +1,69 @@
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: #7259e2;
-}
-
 .about {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
     font-family: sans-serif;
-    color: #222;
-  }
+    color: #4213ad;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #6a4de9;
+}
+
+span {
+    color: #5b39ac;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.perfil-img {
+    width: 150px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.texto {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(57, 3, 94, 0.3);
+}
 
 .perfil ul {
     list-style: none;
@@ -21,4 +72,10 @@
 
 .perfil ul li {
     margin: 0.5rem 0;
+}
+
+.perfil ul li strong {
+    font-weight: bold;
+    display: inline-block;
+    width: 130px;
 }
