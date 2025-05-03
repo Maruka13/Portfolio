@@ -1,0 +1,24 @@
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #7259e2;
+}
+
+.about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    color: #222;
+  }
+
+.perfil ul {
+    list-style: none;
+    padding: 0;
+}
+
+.perfil ul li {
+    margin: 0.5rem 0;
+}
