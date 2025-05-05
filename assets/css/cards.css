@@ -34,6 +34,8 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow:hidden;
+  min-height: 420px; 
 }
 
 .card:hover {
@@ -59,11 +61,10 @@ h1 {
 .card-description {
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   gap: 15px;
 }
 
@@ -74,10 +75,11 @@ h1 {
 
 .links-container {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 /* Estilo base compartilhado */
@@ -185,18 +187,27 @@ h1 {
 
 @media (max-width: 500px) {
   .links-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 12px;
   }
 
-  .links.rectangle {
-    width: 100%;
-    max-width: 200px;
+  .links.rectangle{
+    padding:6px 10px;
+    font-size:.85rem;
+    min-width:0;
+    width: auto; 
   }
 
-  .links.circle {
-    width: 50px;
-    height: 50px;
+  .links.circle{
+    width:36px;
+    height:36px;
+    font-size:1.2rem;
+  }
+  
+  .card {
+    width: 90%;
+    min-height: 420px;
+    padding:15px;
   }
 }
