@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .section {
     min-height: 100vh;
     padding: 5rem 9%;
@@ -9,12 +15,14 @@
     align-items: center;
     gap: 1rem;
     padding: 4rem 6rem;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .home-content {
     max-width: 800px;
-    padding-right: 1rem;
-    padding-left: 7rem;
+    padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .home-content h1 {
@@ -159,11 +167,7 @@ span {
     .home {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    .home-img {
-        order: -1;
-        margin-bottom: 2rem;
+        padding: 2rem 1.5rem;
     }
 
     .home-content {
@@ -178,6 +182,12 @@ span {
         font-size: 2.6rem;
     }
 
+    .home-content h1,
+    .home-content h3.typing-text {
+        white-space: normal;
+        text-align: center;
+    }
+
     .home-content p {
         font-size: 1.6rem;
     }
@@ -185,6 +195,12 @@ span {
     .typing-text {
         font-size: clamp(1.4rem, 3.5vw, 2.2rem);
         min-width: auto;
+    }
+    
+    .home-img {
+        order: -1;
+        margin-bottom: 2rem;
+        justify-content: center;
     }
 
     .home-img img {
