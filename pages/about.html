@@ -44,11 +44,9 @@
             </div>
 
             <div class="cards-sidebyside">
-
                 <div class="perfil">
 
                     <div class="card">
-
                         <h3>Perfil</h3>
                         <h4>Apaixonada por programação, café e souls like.</h4>
 
@@ -72,49 +70,42 @@
                                 <p>emanuelle_carollina@hotmail.com</p>
                             </li>
                         </ul>
-
                     </div>
-
                 </div>
 
                 <div class="card-services">
-
                     <div class="card">
 
                         <h3>Serviços</h3>
-                        <h4>O que eu posso te oferecer</h4>
+                        <h4>O que eu posso oferecer</h4>
 
                         <div class="service-item">
                             <img class="img" src="../assets/img/Front.png" alt="FrontEnd">
                             <p>Front-End</p>
-                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                            <a href="#" class="more" data-service="frontend">Ver mais <span>➜</span></a>
                         </div>
 
                         <div class="service-item">
                             <img class="img" src="../assets/img/Back.png" alt="BackEnd">
                             <p>Back-End</p>
-                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                            <a href="#" class="more" data-service="backend">Ver mais <span>➜</span></a>
                         </div>
 
                         <div class="service-item">
                             <img class="img" src="../assets/img/UIUX.png" alt="UI/UX">
                             <p>UI/UX Design</p>
-                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                            <a href="#" class="more" data-service="uiux">Ver mais <span>➜</span></a>
                         </div>
 
                         <div class="service-item">
                             <img class="img" src="../assets/img/Fresa.png" alt="CNC">
                             <p>CNC</p>
-                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                            <a href="#" class="more" data-service="cnc">Ver mais <span>➜</span></a>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
-
-
 
         </div>
 
@@ -122,11 +113,12 @@
 
     <div id="serviceModal" class="modal">
         <div class="modal-content">
-            <span class="close-button">×</span>
+            <span class="close-button">&times;</span>
             <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
+            <ul class="modal-list" id="modal-description"></ul>
         </div>
     </div>
+
 
 
 

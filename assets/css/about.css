@@ -36,7 +36,7 @@ h4 {
 
 .heading {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 3rem 0;
     color: #6a4de9;
 }
@@ -193,7 +193,7 @@ h4 {
 }
 
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 999;
     left: 0;
@@ -202,22 +202,45 @@ h4 {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    align-items: center;     
+    justify-content: center;
+}
+
+.modal-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.modal-list li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
+.modal-list li i {
+    margin-right: 8px;
+    color: #4f81ec;
 }
 
 .modal-content {
-    background-color: #fff;
-    margin: 10% auto;
+    background-color: #9bc0f1e6;
+    margin: 15% auto;
     padding: 2rem;
-    border: 1px solid #888;
+    border: 1px solid #6d6cc4;
     width: 80%;
     max-width: 500px;
-    border-radius: 8px;
-    color: #3b297f;
-    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .close-button {
-    color: #aaa;
+    color: #4a63f0;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -225,9 +248,8 @@ h4 {
 }
 
 .close-button:hover {
-    color: #000;
+    color: #1d3efa;
 }
-
 
 @media (max-width: 768px) {
 
@@ -242,7 +264,7 @@ h4 {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .perfil-img {
         width: 140px;
     }
@@ -253,5 +275,18 @@ h4 {
 
     .about {
         padding: 2rem 1rem;
+    }
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .modal-list li {
+        font-size: 1rem;
+    }
+
+    .close-button {
+        font-size: 1.25rem;
     }
 }

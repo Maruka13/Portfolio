@@ -1,31 +1,63 @@
-const serviceDescriptions = {
-    "Front-End": "Desenvolvimento de interfaces modernas, responsivas e acessíveis usando HTML, CSS, JavaScript, Angular e mais.",
-    "Back-End": "Criação de APIs robustas, banco de dados com SQL/MongoDB, autenticação e lógica de negócio com Node.js, C#, etc.",
-    "UI/UX Design": "Prototipagem, design centrado no usuário, wireframes e experiência intuitiva com Figma e ferramentas visuais.",
-    "CNC": "Modelagem e programação de usinagem CNC para fresadoras, tornos e softwares CAD/CAM."
+const modal = document.getElementById('serviceModal');
+const closeBtn = document.querySelector('.close-button');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+
+const services = {
+    frontend: {
+        title: 'Front-End',
+        items: [
+            'Crio interfaces modernas com HTML, CSS e JavaScript.',
+            'Utilizo frameworks como Angular e React.',
+            'Faço design responsivo e acessível.',
+            'E muito mais...'
+        ]
+    },
+    backend: {
+        title: 'Back-End',
+        items: [
+            'Desenvolvo APIs REST com Node.js, Java ou Python.',
+            'Gerencio bancos de dados SQL e NoSQL.',
+            'Autenticação segura com JWT.',
+            'E muito mais...'
+        ]
+    },
+    uiux: {
+        title: 'Ui/UX Designer',
+        items: [
+            'Desenvolvo o layout da sua aplicação mobile ou web.',
+            'Crio vídeos editados para apresentações de aplicações.',
+            'Desenvolvo interfaces UI/UX interativas.',
+            'E muito mais...'
+        ]
+    },
+    cnc: {
+        title: 'CNC',
+        items: [
+            'Modelagem de peças para corte CNC.',
+            'Configuração de ferramentas.',
+            'Otimização de trajetos de usinagem.',
+            'Operação de Máquinas CNC.'
+        ]
+    }
 };
 
-//Abrir 
-document.querySelectorAll('.service-item .more').forEach(link => {
-    link.addEventListener('click', function (e) {
+//Abre
+document.querySelectorAll('.more').forEach(link => {
+    link.addEventListener('click', e => {
         e.preventDefault();
-        const title = this.previousElementSibling.textContent;
-        document.getElementById('modal-title').textContent = title;
-        document.getElementById('modal-description').textContent = serviceDescriptions[title] || "Descrição indisponível.";
-        document.getElementById('serviceModal').style.display = "block";
+        const serviceKey = link.getAttribute('data-service');
+        const service = services[serviceKey];
+
+        modalTitle.textContent = service.title;
+        modalDescription.innerHTML = service.items.map(
+            item => `<li><i class="fa-regular fa-circle-check"></i> ${item}</li>`
+        ).join('');
+
+        modal.style.display = 'block';
     });
 });
 
-//Fechar
-document.querySelector('.close-button').addEventListener('click', function () {
-    document.getElementById('serviceModal').style.display = "none";
-});
-
-//Fechar click fora
-window.addEventListener('click', function (e) {
-    const modal = document.getElementById('serviceModal');
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
+// Fechar
+closeBtn.onclick = () => modal.style.display = 'none';
+window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
