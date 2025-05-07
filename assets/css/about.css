@@ -193,7 +193,7 @@ h4 {
 }
 
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     z-index: 999;
     left: 0;
@@ -203,7 +203,7 @@ h4 {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 2rem;
-    align-items: center;     
+    align-items: center;
     justify-content: center;
 }
 
@@ -276,6 +276,7 @@ h4 {
     .about {
         padding: 2rem 1rem;
     }
+
     .modal-content {
         width: 90%;
         padding: 1.5rem;
