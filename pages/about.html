@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/background.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
@@ -48,66 +47,88 @@
 
                 <div class="perfil">
 
-                  <div class="card">
+                    <div class="card">
 
-                    <h3>Perfil</h3>
-                    <h4>Apaixonada por programação, café e souls like.</h4>
+                        <h3>Perfil</h3>
+                        <h4>Apaixonada por programação, café e souls like.</h4>
 
-                    <ul>
-                      <li><strong>👩🏽 Nome:</strong><p>Emanuelle Gomes</p></li>
-                      <li><strong>🎂 Nascimento:</strong><p>11 de setembro de 2000</p></li>
-                      <li><strong>💼 Cargo:</strong><p>Full-Stack Developer</p></li>
-                      <li><strong>📍 Localidade:</strong><p>Interior de São Paulo</p></li>
-                      <li><strong>🌐 Portfólio:</strong><p>marukinha.com</p></li>
-                      <li><strong>📧 Email:</strong><p>emanuelle_carollina@hotmail.com</p></li>
-                    </ul>
+                        <ul>
+                            <li><strong>👩🏽 Nome:</strong>
+                                <p>Emanuelle Gomes</p>
+                            </li>
+                            <li><strong>🎂 Nascimento:</strong>
+                                <p>11 de setembro de 2000</p>
+                            </li>
+                            <li><strong>💼 Cargo:</strong>
+                                <p>Full-Stack Developer</p>
+                            </li>
+                            <li><strong>📍 Localidade:</strong>
+                                <p>Interior de São Paulo</p>
+                            </li>
+                            <li><strong>🌐 Portfólio:</strong>
+                                <p>marukinha.com</p>
+                            </li>
+                            <li><strong>📧 Email:</strong>
+                                <p>emanuelle_carollina@hotmail.com</p>
+                            </li>
+                        </ul>
 
-                  </div>
+                    </div>
 
                 </div>
-              
+
                 <div class="card-services">
-                    
-                  <div class="card">
 
-                    <h3>Serviços</h3>
-                    <h4>O que eu ofereço:</h4>
-              
-                    <div class="service-item">
-                      <img class="img" src="../assets/img/Front.png" alt="FrontEnd">
-                      <p>Front-End</p>
-                      <a href="#" class="more">Ver mais <span>➜</span></a>
+                    <div class="card">
+
+                        <h3>Serviços</h3>
+                        <h4>O que eu posso te oferecer</h4>
+
+                        <div class="service-item">
+                            <img class="img" src="../assets/img/Front.png" alt="FrontEnd">
+                            <p>Front-End</p>
+                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                        </div>
+
+                        <div class="service-item">
+                            <img class="img" src="../assets/img/Back.png" alt="BackEnd">
+                            <p>Back-End</p>
+                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                        </div>
+
+                        <div class="service-item">
+                            <img class="img" src="../assets/img/UIUX.png" alt="UI/UX">
+                            <p>UI/UX Design</p>
+                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                        </div>
+
+                        <div class="service-item">
+                            <img class="img" src="../assets/img/Fresa.png" alt="CNC">
+                            <p>CNC</p>
+                            <a href="#" class="more">Ver mais <span>➜</span></a>
+                        </div>
+
                     </div>
-              
-                    <div class="service-item">
-                      <img class="img" src="../assets/img/Back.png" alt="BackEnd">
-                      <p>Back-End</p>
-                      <a href="#" class="more">Ver mais <span>➜</span></a>
-                    </div>
-              
-                    <div class="service-item">
-                      <img class="img" src="../assets/img/UIUX.png" alt="UI/UX">
-                      <p>UI/UX Design</p>
-                      <a href="#" class="more">Ver mais <span>➜</span></a>
-                    </div>
-              
-                    <div class="service-item">
-                      <img class="img" src="../assets/img/Fresa.png" alt="CNC">
-                      <p>CNC</p>
-                      <a href="#" class="more">Ver mais <span>➜</span></a>
-                    </div>
-              
-                  </div>
 
                 </div>
-              
-              </div>
 
-              
+            </div>
+
+
 
         </div>
 
     </section>
+
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -118,42 +139,3 @@
 </body>
 
 </html>
-
- <!--
-                <div class="services">
-
-                    <h3>Serviços</h3>
-                    <h4>O que eu ofereço:</h4>
-
-                    <div class="services-grid">
-                        <div class="services-card">
-                            <div> <img class="img" src="../assets/img/Front.png" alt="FrontEnd">
-                                <p>Front-End</p>
-                            </div>
-                            <a href="#" class="ver-mais">Ver mais <span>➜</span></a>
-                        </div>
-
-                        <div class="services-card">
-                            <div> <img class="img" src="../assets/img/Back.png" alt="BackEnd">
-                                <p>Back-End</p>
-                            </div>
-                            <a href="#" class="ver-mais">Ver mais <span>➜</span></a>
-                        </div>
-
-                        <div class="services-card">
-                            <div> <img class="img" src="../assets/img/UIUX.png" alt="UI/UX">
-                                <p>UI/UX Design</p>
-                            </div>
-                            <a href="#" class="ver-mais">Ver mais <span>➜</span></a>
-                        </div>
-
-                        <div class="services-card">
-                            <div> <img class="img" src="../assets/img/Fresa.png" alt="CNC">
-                                <p>CNC</p>
-                            </div>
-                            <a href="#" class="ver-mais">Ver mais <span>➜</span></a>
-                        </div>
-
-                    </div>
-
-                </div> -->

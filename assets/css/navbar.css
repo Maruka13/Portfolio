@@ -1,4 +1,5 @@
 a {
+  font-family: 'Times New Roman', Times, serif;
   color: #4834a5;
   text-decoration: none;
   transition: 0.3s;
@@ -52,6 +53,12 @@ nav .logo img {
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
+}
+
+.nav-list a.active {
+  border-bottom: 1px dotted #6a4de9;
+  font-weight: 600;
+  color: #523bbb;
 }
 
 .mobile-menu {

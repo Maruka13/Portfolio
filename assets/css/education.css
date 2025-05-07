@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .education .heading {
     text-align: center;
     font-size: 3rem;

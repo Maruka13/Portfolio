@@ -1,22 +1,7 @@
-.about {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    font-family: 'Poppins', sans-serif;
-    color: #4213ad;
-}
-
-.heading {
-    text-align: center;
-    font-size: 3.2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: #6a4de9;
-}
-
 body {
     font-size: 22px;
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
 span {
@@ -40,6 +25,20 @@ h4 {
 .img {
     width: 50px;
     flex-shrink: 0;
+}
+
+.about {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    color: #4213ad;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 3rem 0;
+    color: #6a4de9;
 }
 
 .about-container {
@@ -67,7 +66,6 @@ h4 {
 }
 
 .texto {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     color: #3b297f;
     line-height: 1.6;
@@ -77,15 +75,22 @@ h4 {
 .cards-sidebyside {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
-    width: 100%;
-    align-items: flex-start;
+    gap: 5rem;
     margin-top: 2rem;
+}
+
+.perfil,
+.card-services {
+    flex: 0 1 500px;
+    max-width: 500px;
+    height: 600px;
+    display: flex;
 }
 
 .card {
     width: 100%;
+    height: 100%;
     text-align: left;
     border-radius: 10px;
     padding: 30px;
@@ -94,6 +99,9 @@ h4 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -143,14 +151,6 @@ h4 {
     gap: 0.5rem;
 }
 
-.perfil,
-.card-services {
-    flex: 1 1 100%;
-    max-width: 600px;
-    width: 100%;
-}
-
-
 .card-services .card {
     display: flex;
     flex-direction: column;
@@ -189,25 +189,19 @@ h4 {
 
 .service-item .more span {
     margin-left: 4px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .cards-sidebyside {
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-
-    .perfil {
-        flex: 1 1 100%;
-        max-width: none;
-        margin-bottom: 2rem;
-    }
-
+    .perfil,
     .card-services {
         flex: 1 1 100%;
-        width: 100%;
+        max-width: 100%;
     }
 
+    .cards-sidebyside {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 500px) {

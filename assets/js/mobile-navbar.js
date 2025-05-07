@@ -35,4 +35,39 @@ class MobileNavbar {
       return this;
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const includeElements = document.querySelectorAll('[data-include]');
+  
+    includeElements.forEach(el => {
+      const file = el.getAttribute("data-include");
+      if (file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            el.innerHTML = data;
+  
+            // 🔥 Após injetar o HTML, marcar o link ativo
+            const links = el.querySelectorAll('a[data-link]');
+            const currentPath = window.location.pathname;
+  
+            links.forEach(link => {
+              if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+              }
+            });
+  
+            // Reativar o menu mobile (caso esteja dentro da navbar)
+            const mobileNav = new MobileNavbar(
+              ".mobile-menu",
+              ".nav-list",
+              ".nav-list li"
+            );
+            mobileNav.init();
+          })
+          .catch(err => console.error("Erro ao carregar o include:", err));
+      }
+    });
+  });
+  
   
