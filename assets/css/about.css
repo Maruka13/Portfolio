@@ -5,7 +5,7 @@ body {
 }
 
 span {
-    color: #5b39ac;
+    color:   #8136c7;
 }
 
 h3 {
@@ -22,11 +22,6 @@ h4 {
     text-align: center;
 }
 
-.img {
-    width: 50px;
-    flex-shrink: 0;
-}
-
 .about {
     max-width: 1300px;
     margin: 0 auto;
@@ -38,7 +33,7 @@ h4 {
     text-align: center;
     font-size: 3rem;
     margin: 3rem 0;
-    color: #6a4de9;
+    color: #6f57da;
 }
 
 .about-container {
@@ -110,7 +105,7 @@ h4 {
 }
 
 .perfil .card {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .perfil ul {
@@ -125,30 +120,8 @@ h4 {
 
 .perfil ul li strong {
     font-weight: bold;
-    display: inline-block;
+    display: inline;
     width: 140px;
-}
-
-.perfil-dados {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.perfil-dados .coluna {
-    flex: 1;
-    min-width: 250px;
-}
-
-.perfil-dados p {
-    margin: 0.8rem 0;
-    font-size: 1rem;
-    color: #3b297f;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .card-services .card {
@@ -163,7 +136,6 @@ h4 {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid #ccc;
 }
 
 .service-item img {
@@ -174,14 +146,14 @@ h4 {
 
 .service-item p {
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
     margin: 0;
     font-size: 1rem;
     color: #3b297f;
 }
 
 .service-item .more {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #5b39ac;
     text-decoration: none;
     white-space: nowrap;
@@ -190,6 +162,7 @@ h4 {
 .service-item .more span {
     margin-left: 4px;
     cursor: pointer;
+    color: #5b39ac;
 }
 
 .modal {
