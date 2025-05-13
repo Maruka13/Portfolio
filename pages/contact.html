@@ -23,43 +23,46 @@
     <section class="contact-section">
 
         <div class="contact-container">
-    
+
             <div class="contact-text">
-    
+
                 <h1>Let's chat.<br>Tell me about your project.</h1>
                 <p>Let's create something together ✌️</p>
-    
+
                 <div class="email-box">
-                    <div class="icon-and-text"> <div class="icon"> <i class="fa-solid fa-envelope"></i>
+                    <div class="icon-and-text">
+                        <div class="icon"> <i class="fa-solid fa-envelope"></i>
                         </div>
                         <span>Me envie um email.</span>
                     </div>
                     <a href="mailto:emanuelle_carollina@hotmail.com">emanuelle_carollina@hotmail.com</a>
                 </div>
-    
+
             </div>
-    
+
             <div class="contact-form transparent-card">
-    
+
                 <h2>Me envie uma mensagem</h2>
-    
-                <form>
-                    <input type="text" placeholder="Nome Completo*" required />
-                    <input type="email" placeholder="Endereço de email*" required />
-                    <input type="text" placeholder="Assunto" />
-                    <textarea placeholder="Me conte mais sobre seu projeto*" required></textarea>
+
+                <form id="contact-form">
+                    <input type="text" name="from_name" placeholder="Nome Completo*" required />
+                    <input type="email" name="reply_to" placeholder="Endereço de email*" required />
+                    <input type="text" name="subject" placeholder="Assunto" />
+                    <textarea name="message" placeholder="Me conte mais sobre seu projeto*" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
-    
+
             </div>
         </div>
-    
+
     </section>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../assets/js/particles.js"></script>
     <script src="../assets/js/include.js"></script>
     <script src="../assets/js/mobile-navbar.js"></script>
+    <script src="../assets/js/form.js"></script>
 
 </body>
 

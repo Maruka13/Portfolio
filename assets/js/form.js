@@ -1,38 +1,19 @@
+emailjs.init("vIK6rJQggmrOPe0Kq");
+
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact-form form");
+    const form = document.getElementById("contact-form");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Impede envio padrão
+        e.preventDefault();
 
-        // Captura os campos do formulário
-        const inputs = form.querySelectorAll("input, textarea");
-        const nome = inputs[0].value.trim();
-        const email = inputs[1].value.trim();
-        const assunto = inputs[2].value.trim() || `Novo projeto de ${nome}`;
-        const mensagem = inputs[3].value.trim();
-
-        // Validação básica
-        if (!nome || !email || !mensagem) {
-            alert("Por favor, preencha todos os campos obrigatórios.");
-            return;
-        }
-
-        // Monta o corpo do email
-        const body = `
-Nome: ${nome}
-Email: ${email}
-
-Mensagem:
-${mensagem}
-      `;
-
-        // Cria o link mailto
-        const mailtoLink = `mailto:emanuelle_carollina@hotmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
-
-        // Abre o cliente de email
-        window.location.href = mailtoLink;
-
-        // (Opcional) limpa o formulário
-        form.reset();
+        // Envia o formulário usando EmailJS
+        emailjs.sendForm("service_97dfnqo", "template_e8arpgj", form)
+            .then(() => {
+                alert("Mensagem enviada com sucesso!");
+                form.reset(); // limpa os campos
+            }, (error) => {
+                console.error("Erro ao enviar a mensagem:", error);
+                alert("Houve um erro ao enviar sua mensagem. Tente novamente mais tarde.");
+            });
     });
 });
