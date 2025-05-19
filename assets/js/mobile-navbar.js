@@ -47,7 +47,6 @@ class MobileNavbar {
           .then(data => {
             el.innerHTML = data;
   
-            // 🔥 Após injetar o HTML, marcar o link ativo
             const links = el.querySelectorAll('a[data-link]');
             const currentPath = window.location.pathname;
   
@@ -57,7 +56,6 @@ class MobileNavbar {
               }
             });
   
-            // Reativar o menu mobile (caso esteja dentro da navbar)
             const mobileNav = new MobileNavbar(
               ".mobile-menu",
               ".nav-list",
@@ -69,5 +67,4 @@ class MobileNavbar {
       }
     });
   });
-  
   
