@@ -5,6 +5,15 @@
                                                 
   }
 
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #e0b9d6, #c6a9e0, #b39cd0, #a7c7e7, #c2e1f2);
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+}
+
   #particles-js {
     position: fixed;
     width: 100%;
