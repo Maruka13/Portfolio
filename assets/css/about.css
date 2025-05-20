@@ -5,7 +5,7 @@ body {
 }
 
 span {
-    color: #6c2ba8;
+    color: #776fec;
 }
 
 h3 {
@@ -235,9 +235,7 @@ h4 {
     .cards-sidebyside {
         justify-content: center;
     }
-}
 
-@media (max-width: 480px) {
     .perfil-img {
         width: 140px;
     }

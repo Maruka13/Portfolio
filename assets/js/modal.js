@@ -5,30 +5,78 @@ const modalDescription = document.getElementById('modal-description');
 
 const services = {
     frontend: {
-        title: 'Front-End',
-        items: [
-            'Crio interfaces modernas com HTML, CSS e JavaScript.',
-            'Utilizo frameworks como Angular e React.',
-            'Faço design responsivo e acessível.',
-            'E muito mais...'
-        ]
-    },
+    title: 'Front-End',
+    items: [
+        'Crio interfaces modernas e interativas com HTML5, CSS3 e JavaScript.',
+        'Utilizo frameworks e bibliotecas como Angular e React',
+        'Desenvolvimento de Single Page Applications.',
+        'Implementação de design responsivo para diferentes dispositivos (mobile-first).',
+        'Otimização de performance front-end (carregamento, renderização).',
+        'Conhecimento em SEO técnico para otimizar a visibilidade.',
+        'Implementação de animações e transições para melhorar a experiência do usuário.',
+        'Trabalho com sistemas de design.',
+        'E muito mais.'
+    ]
+},
     backend: {
         title: 'Back-End',
         items: [
-            'Desenvolvo APIs REST com Node.js, Java ou Python.',
-            'Gerencio bancos de dados SQL e NoSQL.',
-            'Autenticação segura com JWT.',
-            'E muito mais...'
+            'Integrações de Sistemas',
+            'Bancos de Dados e Otimização',
+            'Desenvolvimento de APIs',
+            'Segurança de Aplicações',
+            'Infraestrutura e Cloud',
+            'Performance e Escalabilidade'
         ]
     },
-    uiux: {
-        title: 'Ui/UX Designer',
+    integracao: {
+        title: 'Integrações',
         items: [
-            'Desenvolvo o layout da sua aplicação mobile ou web.',
-            'Crio vídeos editados para apresentações de aplicações.',
-            'Desenvolvo interfaces UI/UX interativas.',
-            'E muito mais...'
+            'Desenvolvimento de integrações via APIs (REST, GraphQL).',
+            'Utilização de filas de mensagens (RabbitMQ, Kafka).',
+            'Comunicação eficiente e confiável entre aplicações.'
+        ]
+    },
+    BD: {
+        title: 'Bancos de Dados',
+        items: [
+            'Projeto e modelagem de bancos de dados SQL (SQL Server, MySQL, PostgreSQL)',
+            'Trabalho com bancos de dados NoSQL (MongoDB)',
+            'Criação e otimização de queries SQL e NoSQL.',
+            'Garantia de integridade, performance e escalabilidade dos dados.'
+        ]
+    },
+    API: {
+        title: 'APIs',
+        items: [
+            'Criação de APIs eficientes e bem documentadas (RESTful, GraphQL).',
+            'Foco em arquitetura, design de endpoints e tratamento de erros.',
+            'Versionamento e otimização de performance de APIs.'
+        ]
+    },
+    seguranca: {
+        title: 'Segurança',
+        items: [
+            'Implementação de autenticação e autorização (JWT)',
+            'Criptografia de dados sensíveis',
+            'Práticas seguras de armazenamento de senhas (hashing, salting)'
+        ]
+    },
+    cloud: {
+        title: 'Infra e Cloud',
+        items: [
+            'Configuração e gerenciamento de infraestrutura cloud (AWS, Azure, GCP).',
+            'Escalabilidade, confiabilidade e segurança na nuvem.',
+            'Utilização de serviços cloud como EC2, S3 e Lambda.',
+            'Adaptação da arquitetura cloud às necessidades do projeto.'
+        ]
+    },
+    perform: {
+        title: 'Performance e Escalabilidade',
+        items: [
+            'Análise e otimização de performance de aplicações backend.',
+            'Implementação de estratégias de escalabilidade horizontal e vertical',
+            'Garantia de tempos de resposta rápidos e boa experiência do usuário.'
         ]
     },
     cnc: {
