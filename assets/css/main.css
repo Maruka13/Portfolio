@@ -32,7 +32,7 @@ body {
     font-weight: 700;
     margin-bottom: 1.5rem;
     font-size: 70px;
-    color:   rgb(106, 42, 165);
+    color: rgb(106, 42, 165);
 }
 
 .home-content h3.typing-text {
@@ -45,7 +45,7 @@ body {
     min-height: 3rem;
     animation: blinkCursor 0.8s steps(1) infinite;
     font-size: 60px;
-    color:   rgb(106, 42, 165);
+    color: rgb(106, 42, 165);
 }
 
 .home-content p {
@@ -57,7 +57,7 @@ body {
 }
 
 span {
-    color: #6f57da; 
+    color: #6f57da;
 }
 
 .home-img {
@@ -163,11 +163,14 @@ span {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .home {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 3rem 1.5rem;
+        padding-top: calc(8vh + 3rem);
+        padding-bottom: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .home-content {
@@ -175,21 +178,21 @@ span {
     }
 
     .home-content h1 {
-        font-size: clamp(2.8rem, 6vw, 3.2rem);
+        font-size: 2.2rem;
+        white-space: normal;
+        text-align: center;
     }
 
     .home-content h3.typing-text {
-        font-size: clamp(2rem, 5vw, 2.6rem);
-    }
-
-    .home-content h1,
-    .home-content h3.typing-text {
+        font-size: clamp(1.8rem, 4vw, 2rem);
+        border-right: 1.5px solid #c6a9e0;
+        min-height: 2rem;
         white-space: normal;
         text-align: center;
     }
 
     .home-content p {
-        font-size: clamp(1.4rem, 3vw, 1.6rem);
+        font-size: 1.4rem;
     }
 
     .typing-text {
@@ -208,46 +211,6 @@ span {
 
     .social-icon {
         justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .social-icon a {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.6rem;
-        margin: 0 1rem;
-    }
-
-    .tooltip {
-        left: 50%;
-        top: 120%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 576px) {
-    .home {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: calc(8vh + 3rem);
-        padding-bottom: 3rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .home-content h1 {
-        font-size: 2.4rem;
-    }
-
-    .home-content h3.typing-text {
-        font-size: 1.8rem;
-    }
-
-    .home-content p {
-        font-size: 1.4rem;
-    }
-
-    .social-icon {
         gap: 1rem;
     }
 
@@ -255,5 +218,12 @@ span {
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1.4rem;
+        margin: 0 1rem;
+    }
+
+    .tooltip {
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
     }
 }
