@@ -2,60 +2,68 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.education {
+    padding: 6rem 1rem 3rem;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .education .heading {
     text-align: center;
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 4rem;
     color: #33227c;
+    font-weight: 700;
+}
+
+.education .heading span {
+    color: #776fec;
 }
 
 .education .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 .education .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: rgb(151, 138, 228);
+    width: 4px;
+    background-color: rgb(104, 88, 196);
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;
-    z-index: -2px;
+    margin-left: -2px;
+    z-index: 0;
 }
 
 .education .container {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
+    background-color: transparent;
     width: 50%;
+    box-sizing: border-box;
 }
 
+/* bolinhas centro */
 .education .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: rgb(194, 215, 243);
-    background-image: url('../img/aluna.png');
+    width: 20px;
+    height: 20px;
+    background-color: #8675e9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 4px solid rgb(126, 99, 223);
+    border: 3px solid rgb(126, 99, 223);
     top: 15px;
     border-radius: 50%;
-    z-index: 100;
-    font-size: 1.89rem;
-    text-align: center;
-    font-weight: 600;
+    z-index: 1;
 }
 
 .education .left {
@@ -66,6 +74,7 @@ body {
     left: 50%;
 }
 
+/* seta */
 .education .left::before {
     content: '';
     height: 0;
@@ -74,7 +83,7 @@ body {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid rgb(83, 33, 221);
+    border: medium solid rgb(141, 134, 241);
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent rgb(141, 134, 241);
 }
@@ -87,54 +96,61 @@ body {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid rgb(83, 33, 221);
+    border: medium solid rgb(141, 134, 241);
     border-width: 10px 10px 10px 0;
     border-color: transparent rgb(141, 134, 241) transparent transparent;
 }
 
 .education .right::after {
-    left: -16px;
+    left: -12px;
 }
 
+.education .left::after {
+    right: -12px;
+}
+
+/* card educ */
 .education .content {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 12px rgba(104, 96, 212, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 25px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .education .content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(57, 3, 94, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(57, 3, 94, 0.4);
 }
 
+/* títulos */
 .education .content .tag {
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.education .content .decs {
-    margin-left: 1.5rem;
-    padding-bottom: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .education .content .tag h2 {
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 600;
     color: #4022c5;
+    line-height: 1.3;
+}
+
+.education .content .decs {
+    margin-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .education .content .decs p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
     color: #33227c;
-
+    line-height: 1.5;
 }
 
 .selector {
@@ -162,59 +178,84 @@ body {
     max-width: 800px;
     margin: 0 auto 50px;
     min-height: 150px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
 }
 
-@media screen and (max-width:600px) {
 
-    .education .heading {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
+@media screen and (max-width: 768px) {
+    .education .timeline {
+        max-width: 90%;
     }
 
-    .education .timeline {
-        margin-top: 2rem;
+    .education .container {
+        padding: 10px 20px;
+    }
+
+    .education .heading {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin-bottom: 2.5rem;
     }
 
     .education .timeline::after {
-        left: 31px;
+        left: 20px;
+        width: 3px;
     }
 
     .education .container {
         width: 100%;
-        padding-left: 8rem;
-        padding-right: 2rem;
+        padding-left: 50px;
+        padding-right: 15px;
     }
 
-    .education .container::after {
-        font-size: 2.2rem;
-    }
-
-    .education .container::before {
-        left: 61px;
-        border: medium solid rgb(164, 142, 224);
-        border-width: 10px 10px 10px 0;
-        border-color: transparent rgb(43, 61, 226) transparent transparent;
-    }
-
-    .education .left::after,
-    .education .right::after {
-        left: 15px;
-    }
-
+    .education .left,
     .education .right {
         left: 0%;
     }
 
-    .selector {
-        margin-bottom: 1.5rem;
+    /* bolinhas */
+    .education .container::after {
+        left: 6px;
+        right: auto;
+        top: 19px;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* triangulo */
+    .education .container::before {
+        left: 40px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(127, 120, 223) transparent transparent;
+    }
+
+    .education .content {
+        padding: 20px;
+    }
+
+    .education .content .tag h2 {
+        font-size: clamp(1.4rem, 4vw, 1.8rem);
+    }
+
+    .education .content .decs p {
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     }
 
     .selector button {
         display: block;
-        width: 80%;
-        margin: 0.5rem auto;
+        width: 90%;
+        margin: 0.6rem auto;
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
     }
 
-
+    .certification-display {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
 }
