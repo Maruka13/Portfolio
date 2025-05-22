@@ -1,8 +1,12 @@
   const certData = {
     backend: [
-      "ex 1",
-      "ex 2",
-      "ex 3"
+      "Curso Web API ASP.NET Core Essencial (.NET 8/.NET 9) - Udemy;",
+      "C# Completo e Profissional - Udemy;",
+      "NLW Connect - Csharp - Rocketseat;",
+      "Curso de Java com AWS Lambda e S3 - Rocketseat;",
+      "PHP - Desenvolvimento de uma aplicação em PHP com Laravel seguindo a arquitetura MVC -  Rocketseat;",
+      "Curso Lógica de programação: mergulhe em programação com JavaScript - Alura;",
+      "Imersão Dev Backend - Alura."
     ],
     frontend: [
       "ex 1",
