@@ -18,9 +18,13 @@
       "Imersão Front-End 2ª Edição - Alura."
     ],
      cnc: [
-      "ex 1",
-      "ex 2",
-      "ex 3"
+      "Aperfeiçoamento Profissional - Programação de Centro de Usinagem CNC - SENAI São Paulo;",
+      "Aperfeiçoamento Profissional - Programação de Torno CNC - SENAI São Paulo;",
+      "Especialização - Programador de Máquina CNC: Fresadora - Instituto Federal de Minas Gerais;",
+      "Especialização - Programador de Máquina CNC: Torno - Instituto Federal de Minas Gerais;",
+      "Operação e Programação de Torno CNC Cabeçote Móvel - Allied Titanium;",
+      "Intensivão 8.0 - Técnicas de Manutenção Preditiva na Indústria 4.0 - TRACTIAN;",
+      "Metrologia na Indústria 4.0 - SENAI São Carlos.",
     ],
      outros: [
       "ex 1",
