@@ -27,9 +27,14 @@
       "Metrologia na Indústria 4.0 - SENAI São Carlos.",
     ],
      outros: [
-      "ex 1",
-      "ex 2",
-      "ex 3"
+      "Rocketseat Class - O poder dos dados para devs - Rocketseat;",
+      "Introdução ao Microsoft Azure Advanced - DIO;",
+      "NLW Connect - Full Stack - Rocketseat;",
+      "Imersão IA Alura + Google Gemini - Alura;",
+      "Networking Academy Learn-A-Thon 2024 - Cisco;",
+      "NLW Pocket: Mobile - React Native - Rocketseat;",
+      "Overview Docker - DIO;",
+      "Versionamento de Código com Git e GitHub - DIO."
     ],
   };
 
