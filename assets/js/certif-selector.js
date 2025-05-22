@@ -9,9 +9,13 @@
       "Imersão Dev Backend - Alura."
     ],
     frontend: [
-      "ex 1",
-      "ex 2",
-      "ex 3"
+      "Web FrontEnd Completpo com HTML, CSS, JS, TS, React e Next 2025 - Udemy;",
+      "Imersão Dev 9ª Edição Alura;",
+      "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags - Alura;",
+      "Curso Lógica de programação: mergulhe em programação com JavaScript - Alura;",
+      "NLW Pocket: Mobile - React Native - Rocketseat;",
+      "NLW Connect - React - Rocketseat;",
+      "Imersão Front-End 2ª Edição - Alura."
     ],
      cnc: [
       "ex 1",
