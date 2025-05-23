@@ -39,14 +39,15 @@
   };
 
   function showCerts(area) {
-    const container = document.getElementById("certCard");
-    container.innerHTML = `
-      <div class="tag"><h2>${getAreaTitle(area)}</h2></div>
-      <div class="decs">
-        ${certData[area].map(cert => `<p>${cert}</p>`).join('')}
-      </div>
-    `;
-  }
+  const container = document.getElementById("certCard");
+  container.innerHTML = `
+    <div class="tag"><h2>${getAreaTitle(area)}</h2></div>
+    <ul class="decs">
+      ${certData[area].map(cert => `<li>${cert}</li>`).join('')}
+    </ul>
+  `;
+}
+
 
   function getAreaTitle(area) {
     switch(area) {
