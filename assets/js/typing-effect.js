@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     const words = [
+      " Engenheira de Software. ",
+      " Técnica em Mecatrônica. ",
+      " Desenvolvedora Web. ",
+      " Programadora CNC. ",
+      " Agente Comunitária de Saúde. "
+    ];
+
+    /* const words = [
       " Software Engineer. ",
       " Mechatronics Technician. ",
       " Web Developer. ",
       " CNC Programmer. ",
       " ACS. "
-    ];
+    ];*/
   
     const typedText = document.querySelector(".typing-text span");
     let wordIndex = 0;
