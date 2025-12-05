@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       " Mechatronics Technician. ",
       " Web Developer. ",
       " CNC Programmer. ",
-      " Elden Lord. "
+      " ACS. "
     ];
   
     const typedText = document.querySelector(".typing-text span");
